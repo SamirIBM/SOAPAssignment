@@ -1,0 +1,483 @@
+2020-12-04 09:59:06,021 INFO  [log] [743]
+2020-12-04 09:59:06,022 INFO  [log] [application/soap+xml; charset=utf-8]
+2020-12-04 09:59:06,041 INFO  [log] simple
+2020-12-04 09:59:06,099 INFO  [log] Testcase name is CatalogProdTypeList-TC007
+2020-12-04 09:59:06,107 INFO  [log] TestSuite name is CatalogProduct-Automation
+2020-12-04 09:59:06,143 INFO  [log] Request is <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:def="http://soap.upskills.in/soap/default?services=catalogProductTypeListV1">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <def:catalogProductTypeListV1GetProductTypesRequest/>\r
+   </soap:Body>\r
+</soap:Envelope>
+2020-12-04 09:59:06,782 INFO  [log] [743]
+2020-12-04 09:59:06,783 INFO  [log] [application/soap+xml; charset=utf-8]
+2020-12-04 09:59:06,785 INFO  [log] simple
+2020-12-04 09:59:06,822 INFO  [log] Testcase name is CatalogProductRepository-TC008
+2020-12-04 09:59:06,823 INFO  [log] TestSuite name is CatalogProduct-Automation
+2020-12-04 09:59:06,825 INFO  [log] Request is <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:def="http://soap.upskills.in/soap/default?services=catalogProductRepositoryV1">
+   <soap:Header/>
+   <soap:Body>
+      <def:catalogProductRepositoryV1SaveRequest>
+         <product>
+            
+            <!--sku should be unique for each request-->
+			<sku>SKU00001</sku>
+			<name>MacBook Air</name>
+		<!--default value is 4-->
+			<attributeSetId>4</attributeSetId>
+			<price>100</price>
+		<!--for typeid refer catalogProductTypeListV1 WSDL service (TC_007)-->
+			<typeId>simple</typeId>
+         </product>
+      </def:catalogProductRepositoryV1SaveRequest>
+   </soap:Body>
+</soap:Envelope>
+2020-12-04 09:59:06,839 INFO  [log] SKU is SKU00001
+2020-12-04 09:59:06,840 INFO  [log] NAME is MacBook Air
+2020-12-04 09:59:06,840 INFO  [log] TYPE ID is simple
+2020-12-04 09:59:06,841 INFO  [log] SET ID is 4
+2020-12-04 09:59:06,841 INFO  [log] PRICE is 100
+2020-12-04 09:59:06,849 INFO  [log] Updated Xml is <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:def="http://soap.upskills.in/soap/default?services=catalogProductRepositoryV1">
+   <soap:Header/>
+   <soap:Body>
+      <def:catalogProductRepositoryV1SaveRequest>
+         <product>
+            
+            <!--sku should be unique for each request-->
+			<sku>SKU00001</sku>
+			<name>MacBook Air</name>
+		<!--default value is 4-->
+			<attributeSetId>4</attributeSetId>
+			<price>100</price>
+		<!--for typeid refer catalogProductTypeListV1 WSDL service (TC_007)-->
+			<typeId>simple</typeId>
+         </product>
+      </def:catalogProductRepositoryV1SaveRequest>
+   </soap:Body>
+</soap:Envelope>
+2020-12-04 09:59:08,079 INFO  [log] [1356]
+2020-12-04 09:59:08,080 INFO  [log] [application/soap+xml; charset=utf-8]
+2020-12-04 09:59:08,082 INFO  [log] SKU00001
+2020-12-04 09:59:11,256 INFO  [log] Testcase name is CatalogProductRepository-TC009
+2020-12-04 09:59:11,258 INFO  [log] TestSuite name is CatalogProduct-Automation
+2020-12-04 09:59:11,260 INFO  [log] Request is <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:def="http://soap.upskills.in/soap/default?services=catalogProductRepositoryV1">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <def:catalogProductRepositoryV1GetListRequest>\r
+         <searchCriteria>\r
+         </searchCriteria>\r
+      </def:catalogProductRepositoryV1GetListRequest>\r
+   </soap:Body>\r
+</soap:Envelope>
+2020-12-04 09:59:12,119 INFO  [log] [1464]
+2020-12-04 09:59:12,119 INFO  [log] [application/soap+xml; charset=utf-8]
+2020-12-04 09:59:12,121 INFO  [log] SKU00001
+2020-12-04 09:59:12,123 INFO  [log] 12341972
+2020-12-04 09:59:12,126 INFO  [log] MacBook Air
+2020-12-04 09:59:12,128 INFO  [log] 4
+2020-12-04 09:59:12,130 INFO  [log] 100
+2020-12-04 09:59:12,923 INFO  [log] [1464]
+2020-12-04 09:59:12,923 INFO  [log] [application/soap+xml; charset=utf-8]
+2020-12-04 09:59:12,925 INFO  [log] SKU00001
+2020-12-04 09:59:12,926 INFO  [log] 12341972
+2020-12-04 09:59:12,928 INFO  [log] MacBook Air
+2020-12-04 09:59:12,929 INFO  [log] 4
+2020-12-04 09:59:12,932 INFO  [log] 100
+2020-12-04 09:59:13,714 INFO  [log] Testcase name is CatalogProductRepository-TC010
+2020-12-04 09:59:13,714 INFO  [log] TestSuite name is CatalogProduct-Automation
+2020-12-04 09:59:13,717 INFO  [log] Request is <env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns1="http://soap.upskills.in/soap/default?services=catalogProductRepositoryV1">
+   <env:Body>
+      <ns1:catalogProductRepositoryV1GetListResponse>
+         <result>
+            <items>
+               <item>
+                  <id>12341972</id>
+                  <sku>SKU00001</sku>
+                  <name>MacBook Air</name>
+                  <attributeSetId>4</attributeSetId>
+                  <price>100</price>
+                  <status>1</status>
+                  <visibility>4</visibility>
+                  <typeId>simple</typeId>
+                  <createdAt>2020-12-04 04:29:06</createdAt>
+                  <updatedAt>2020-12-04 04:29:08</updatedAt>
+                  <extensionAttributes>
+                     <websiteIds>
+                        <item>1</item>
+                     </websiteIds>
+                  </extensionAttributes>
+                  <productLinks/>
+                  <options/>
+                  <mediaGalleryEntries/>
+                  <tierPrices/>
+                  <customAttributes>
+                     <item>
+                        <attributeCode>options_container</attributeCode>
+                        <value>container2</value>
+                     </item>
+                     <item>
+                        <attributeCode>msrp_display_actual_price_type</attributeCode>
+                        <value>0</value>
+                     </item>
+                     <item>
+                        <attributeCode>url_key</attributeCode>
+                        <value>macbook-air</value>
+                     </item>
+                     <item>
+                        <attributeCode>required_options</attributeCode>
+                        <value>0</value>
+                     </item>
+                     <item>
+                        <attributeCode>has_options</attributeCode>
+                        <value>0</value>
+                     </item>
+                     <item>
+                        <attributeCode>tax_class_id</attributeCode>
+                        <value>2</value>
+                     </item>
+                     <item>
+                        <attributeCode>category_ids</attributeCode>
+                        <value/>
+                     </item>
+                  </customAttributes>
+               </item>
+            </items>
+            <searchCriteria>
+               <filterGroups/>
+            </searchCriteria>
+            <totalCount>1</totalCount>
+         </result>
+      </ns1:catalogProductRepositoryV1GetListResponse>
+   </env:Body>
+</env:Envelope>
+2020-12-04 09:59:13,747 INFO  [log] SKU00001
+2020-12-04 09:59:14,562 INFO  [log] [1354]
+2020-12-04 09:59:14,562 INFO  [log] [application/soap+xml; charset=utf-8]
+2020-12-04 09:59:14,565 INFO  [log] SKU00001
+2020-12-04 09:59:15,623 INFO  [log] [349]
+2020-12-04 09:59:15,623 INFO  [log] [application/soap+xml; charset=utf-8]
+2020-12-04 09:59:15,625 INFO  [log] true
+2020-12-04 10:05:30,646 INFO  [log] [743]
+2020-12-04 10:05:30,647 INFO  [log] [application/soap+xml; charset=utf-8]
+2020-12-04 10:05:30,656 INFO  [log] simple
+2020-12-04 10:05:30,698 INFO  [log] Testcase name is CatalogProdTypeList-TC007
+2020-12-04 10:05:30,703 INFO  [log] TestSuite name is CatalogProduct-Automation
+2020-12-04 10:05:30,721 INFO  [log] Request is <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:def="http://soap.upskills.in/soap/default?services=catalogProductTypeListV1">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <def:catalogProductTypeListV1GetProductTypesRequest/>\r
+   </soap:Body>\r
+</soap:Envelope>
+2020-12-04 10:05:31,369 INFO  [log] [743]
+2020-12-04 10:05:31,369 INFO  [log] [application/soap+xml; charset=utf-8]
+2020-12-04 10:05:31,371 INFO  [log] simple
+2020-12-04 10:05:31,401 INFO  [log] Testcase name is CatalogProductRepository-TC008
+2020-12-04 10:05:31,402 INFO  [log] TestSuite name is CatalogProduct-Automation
+2020-12-04 10:05:31,404 INFO  [log] Request is <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:def="http://soap.upskills.in/soap/default?services=catalogProductRepositoryV1">
+   <soap:Header/>
+   <soap:Body>
+      <def:catalogProductRepositoryV1SaveRequest>
+         <product>
+            
+            <!--sku should be unique for each request-->
+			<sku>SKU00001</sku>
+			<name>MacBook Air</name>
+		<!--default value is 4-->
+			<attributeSetId>4</attributeSetId>
+			<price>100</price>
+		<!--for typeid refer catalogProductTypeListV1 WSDL service (TC_007)-->
+			<typeId>simple</typeId>
+         </product>
+      </def:catalogProductRepositoryV1SaveRequest>
+   </soap:Body>
+</soap:Envelope>
+2020-12-04 10:05:31,417 INFO  [log] SKU is SKU00001
+2020-12-04 10:05:31,417 INFO  [log] NAME is MacBook Air
+2020-12-04 10:05:31,417 INFO  [log] TYPE ID is simple
+2020-12-04 10:05:31,418 INFO  [log] SET ID is 4
+2020-12-04 10:05:31,418 INFO  [log] PRICE is 100
+2020-12-04 10:05:31,429 INFO  [log] Updated Xml is <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:def="http://soap.upskills.in/soap/default?services=catalogProductRepositoryV1">
+   <soap:Header/>
+   <soap:Body>
+      <def:catalogProductRepositoryV1SaveRequest>
+         <product>
+            
+            <!--sku should be unique for each request-->
+			<sku>SKU00001</sku>
+			<name>MacBook Air</name>
+		<!--default value is 4-->
+			<attributeSetId>4</attributeSetId>
+			<price>100</price>
+		<!--for typeid refer catalogProductTypeListV1 WSDL service (TC_007)-->
+			<typeId>simple</typeId>
+         </product>
+      </def:catalogProductRepositoryV1SaveRequest>
+   </soap:Body>
+</soap:Envelope>
+2020-12-04 10:05:32,714 INFO  [log] [1356]
+2020-12-04 10:05:32,715 INFO  [log] [application/soap+xml; charset=utf-8]
+2020-12-04 10:05:32,717 INFO  [log] SKU00001
+2020-12-04 10:05:33,947 INFO  [log] [1356]
+2020-12-04 10:05:33,947 INFO  [log] [application/soap+xml; charset=utf-8]
+2020-12-04 10:05:33,949 INFO  [log] SKU00001
+2020-12-04 10:05:33,979 INFO  [log] Testcase name is CatalogProductRepository-TC009
+2020-12-04 10:05:33,979 INFO  [log] TestSuite name is CatalogProduct-Automation
+2020-12-04 10:05:33,981 INFO  [log] Request is <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:def="http://soap.upskills.in/soap/default?services=catalogProductRepositoryV1">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <def:catalogProductRepositoryV1GetListRequest>\r
+         <searchCriteria>\r
+         </searchCriteria>\r
+      </def:catalogProductRepositoryV1GetListRequest>\r
+   </soap:Body>\r
+</soap:Envelope>
+2020-12-04 10:05:34,828 INFO  [log] [1464]
+2020-12-04 10:05:34,828 INFO  [log] [application/soap+xml; charset=utf-8]
+2020-12-04 10:05:34,830 INFO  [log] SKU00001
+2020-12-04 10:05:34,832 INFO  [log] 12341975
+2020-12-04 10:05:34,834 INFO  [log] MacBook Air
+2020-12-04 10:05:34,836 INFO  [log] 4
+2020-12-04 10:05:34,838 INFO  [log] 100
+2020-12-04 10:05:35,578 INFO  [log] [1464]
+2020-12-04 10:05:35,578 INFO  [log] [application/soap+xml; charset=utf-8]
+2020-12-04 10:05:35,580 INFO  [log] SKU00001
+2020-12-04 10:05:35,581 INFO  [log] 12341975
+2020-12-04 10:05:35,582 INFO  [log] MacBook Air
+2020-12-04 10:05:35,583 INFO  [log] 4
+2020-12-04 10:05:35,584 INFO  [log] 100
+2020-12-04 10:05:38,673 INFO  [log] Testcase name is CatalogProductRepository-TC010
+2020-12-04 10:05:38,674 INFO  [log] TestSuite name is CatalogProduct-Automation
+2020-12-04 10:05:38,677 INFO  [log] Request is <env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns1="http://soap.upskills.in/soap/default?services=catalogProductRepositoryV1">
+   <env:Body>
+      <ns1:catalogProductRepositoryV1GetListResponse>
+         <result>
+            <items>
+               <item>
+                  <id>12341975</id>
+                  <sku>SKU00001</sku>
+                  <name>MacBook Air</name>
+                  <attributeSetId>4</attributeSetId>
+                  <price>100</price>
+                  <status>1</status>
+                  <visibility>4</visibility>
+                  <typeId>simple</typeId>
+                  <createdAt>2020-12-04 04:35:31</createdAt>
+                  <updatedAt>2020-12-04 04:35:32</updatedAt>
+                  <extensionAttributes>
+                     <websiteIds>
+                        <item>1</item>
+                     </websiteIds>
+                  </extensionAttributes>
+                  <productLinks/>
+                  <options/>
+                  <mediaGalleryEntries/>
+                  <tierPrices/>
+                  <customAttributes>
+                     <item>
+                        <attributeCode>options_container</attributeCode>
+                        <value>container2</value>
+                     </item>
+                     <item>
+                        <attributeCode>msrp_display_actual_price_type</attributeCode>
+                        <value>0</value>
+                     </item>
+                     <item>
+                        <attributeCode>url_key</attributeCode>
+                        <value>macbook-air</value>
+                     </item>
+                     <item>
+                        <attributeCode>required_options</attributeCode>
+                        <value>0</value>
+                     </item>
+                     <item>
+                        <attributeCode>has_options</attributeCode>
+                        <value>0</value>
+                     </item>
+                     <item>
+                        <attributeCode>tax_class_id</attributeCode>
+                        <value>2</value>
+                     </item>
+                     <item>
+                        <attributeCode>category_ids</attributeCode>
+                        <value/>
+                     </item>
+                  </customAttributes>
+               </item>
+            </items>
+            <searchCriteria>
+               <filterGroups/>
+            </searchCriteria>
+            <totalCount>1</totalCount>
+         </result>
+      </ns1:catalogProductRepositoryV1GetListResponse>
+   </env:Body>
+</env:Envelope>
+2020-12-04 10:05:38,716 INFO  [log] SKU00001
+2020-12-04 10:05:39,591 INFO  [log] [1354]
+2020-12-04 10:05:39,592 INFO  [log] [application/soap+xml; charset=utf-8]
+2020-12-04 10:05:39,594 INFO  [log] SKU00001
+2020-12-04 10:05:40,633 INFO  [log] [349]
+2020-12-04 10:05:40,634 INFO  [log] [application/soap+xml; charset=utf-8]
+2020-12-04 10:05:40,636 INFO  [log] true
+2020-12-04 10:10:23,294 INFO  [log] [743]
+2020-12-04 10:10:23,295 INFO  [log] [application/soap+xml; charset=utf-8]
+2020-12-04 10:10:23,301 INFO  [log] simple
+2020-12-04 10:10:23,333 INFO  [log] Testcase name is CatalogProdTypeList-TC007
+2020-12-04 10:10:23,339 INFO  [log] TestSuite name is CatalogProduct-Automation
+2020-12-04 10:10:23,351 INFO  [log] Request is <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:def="http://soap.upskills.in/soap/default?services=catalogProductTypeListV1">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <def:catalogProductTypeListV1GetProductTypesRequest/>\r
+   </soap:Body>\r
+</soap:Envelope>
+2020-12-04 10:10:23,997 INFO  [log] [743]
+2020-12-04 10:10:23,997 INFO  [log] [application/soap+xml; charset=utf-8]
+2020-12-04 10:10:23,999 INFO  [log] simple
+2020-12-04 10:10:24,024 INFO  [log] Testcase name is CatalogProductRepository-TC008
+2020-12-04 10:10:24,025 INFO  [log] TestSuite name is CatalogProduct-Automation
+2020-12-04 10:10:24,026 INFO  [log] Request is <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:def="http://soap.upskills.in/soap/default?services=catalogProductRepositoryV1">
+   <soap:Header/>
+   <soap:Body>
+      <def:catalogProductRepositoryV1SaveRequest>
+         <product>
+            
+            <!--sku should be unique for each request-->
+			<sku>SKU00001</sku>
+			<name>MacBook Air</name>
+		<!--default value is 4-->
+			<attributeSetId>4</attributeSetId>
+			<price>100</price>
+		<!--for typeid refer catalogProductTypeListV1 WSDL service (TC_007)-->
+			<typeId>simple</typeId>
+         </product>
+      </def:catalogProductRepositoryV1SaveRequest>
+   </soap:Body>
+</soap:Envelope>
+2020-12-04 10:10:24,038 INFO  [log] SKU is SKU00001
+2020-12-04 10:10:24,038 INFO  [log] NAME is MacBook Air
+2020-12-04 10:10:24,038 INFO  [log] TYPE ID is simple
+2020-12-04 10:10:24,039 INFO  [log] SET ID is 4
+2020-12-04 10:10:24,039 INFO  [log] PRICE is 100
+2020-12-04 10:10:24,046 INFO  [log] Updated Xml is <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:def="http://soap.upskills.in/soap/default?services=catalogProductRepositoryV1">
+   <soap:Header/>
+   <soap:Body>
+      <def:catalogProductRepositoryV1SaveRequest>
+         <product>
+            
+            <!--sku should be unique for each request-->
+			<sku>SKU00001</sku>
+			<name>MacBook Air</name>
+		<!--default value is 4-->
+			<attributeSetId>4</attributeSetId>
+			<price>100</price>
+		<!--for typeid refer catalogProductTypeListV1 WSDL service (TC_007)-->
+			<typeId>simple</typeId>
+         </product>
+      </def:catalogProductRepositoryV1SaveRequest>
+   </soap:Body>
+</soap:Envelope>
+2020-12-04 10:10:25,243 INFO  [log] [1356]
+2020-12-04 10:10:25,244 INFO  [log] [application/soap+xml; charset=utf-8]
+2020-12-04 10:10:25,246 INFO  [log] SKU00001
+2020-12-04 10:10:26,588 INFO  [log] [1356]
+2020-12-04 10:10:26,588 INFO  [log] [application/soap+xml; charset=utf-8]
+2020-12-04 10:10:26,589 INFO  [log] SKU00001
+2020-12-04 10:10:26,607 INFO  [log] Testcase name is CatalogProductRepository-TC009
+2020-12-04 10:10:26,607 INFO  [log] TestSuite name is CatalogProduct-Automation
+2020-12-04 10:10:26,608 INFO  [log] Request is <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:def="http://soap.upskills.in/soap/default?services=catalogProductRepositoryV1">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <def:catalogProductRepositoryV1GetListRequest>\r
+         <searchCriteria>\r
+         </searchCriteria>\r
+      </def:catalogProductRepositoryV1GetListRequest>\r
+   </soap:Body>\r
+</soap:Envelope>
+2020-12-04 10:10:27,544 INFO  [log] [1464]
+2020-12-04 10:10:27,544 INFO  [log] [application/soap+xml; charset=utf-8]
+2020-12-04 10:10:27,546 INFO  [log] SKU00001
+2020-12-04 10:10:27,547 INFO  [log] 12341977
+2020-12-04 10:10:27,548 INFO  [log] MacBook Air
+2020-12-04 10:10:27,550 INFO  [log] 4
+2020-12-04 10:10:27,553 INFO  [log] 100
+2020-12-04 10:10:28,353 INFO  [log] [1464]
+2020-12-04 10:10:28,353 INFO  [log] [application/soap+xml; charset=utf-8]
+2020-12-04 10:10:28,355 INFO  [log] SKU00001
+2020-12-04 10:10:28,356 INFO  [log] 12341977
+2020-12-04 10:10:28,357 INFO  [log] MacBook Air
+2020-12-04 10:10:28,357 INFO  [log] 4
+2020-12-04 10:10:28,358 INFO  [log] 100
+2020-12-04 10:10:30,429 INFO  [log] Testcase name is CatalogProductRepository-TC010
+2020-12-04 10:10:30,429 INFO  [log] TestSuite name is CatalogProduct-Automation
+2020-12-04 10:10:30,430 INFO  [log] Request is <env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns1="http://soap.upskills.in/soap/default?services=catalogProductRepositoryV1">
+   <env:Body>
+      <ns1:catalogProductRepositoryV1GetListResponse>
+         <result>
+            <items>
+               <item>
+                  <id>12341977</id>
+                  <sku>SKU00001</sku>
+                  <name>MacBook Air</name>
+                  <attributeSetId>4</attributeSetId>
+                  <price>100</price>
+                  <status>1</status>
+                  <visibility>4</visibility>
+                  <typeId>simple</typeId>
+                  <createdAt>2020-12-04 04:40:24</createdAt>
+                  <updatedAt>2020-12-04 04:40:25</updatedAt>
+                  <extensionAttributes>
+                     <websiteIds>
+                        <item>1</item>
+                     </websiteIds>
+                  </extensionAttributes>
+                  <productLinks/>
+                  <options/>
+                  <mediaGalleryEntries/>
+                  <tierPrices/>
+                  <customAttributes>
+                     <item>
+                        <attributeCode>options_container</attributeCode>
+                        <value>container2</value>
+                     </item>
+                     <item>
+                        <attributeCode>msrp_display_actual_price_type</attributeCode>
+                        <value>0</value>
+                     </item>
+                     <item>
+                        <attributeCode>url_key</attributeCode>
+                        <value>macbook-air</value>
+                     </item>
+                     <item>
+                        <attributeCode>required_options</attributeCode>
+                        <value>0</value>
+                     </item>
+                     <item>
+                        <attributeCode>has_options</attributeCode>
+                        <value>0</value>
+                     </item>
+                     <item>
+                        <attributeCode>tax_class_id</attributeCode>
+                        <value>2</value>
+                     </item>
+                     <item>
+                        <attributeCode>category_ids</attributeCode>
+                        <value/>
+                     </item>
+                  </customAttributes>
+               </item>
+            </items>
+            <searchCriteria>
+               <filterGroups/>
+            </searchCriteria>
+            <totalCount>1</totalCount>
+         </result>
+      </ns1:catalogProductRepositoryV1GetListResponse>
+   </env:Body>
+</env:Envelope>
+2020-12-04 10:10:30,469 INFO  [log] SKU00001
+2020-12-04 10:10:31,413 INFO  [log] [1354]
+2020-12-04 10:10:31,413 INFO  [log] [application/soap+xml; charset=utf-8]
+2020-12-04 10:10:31,414 INFO  [log] SKU00001
+2020-12-04 10:10:32,491 INFO  [log] [349]
+2020-12-04 10:10:32,491 INFO  [log] [application/soap+xml; charset=utf-8]
+2020-12-04 10:10:32,493 INFO  [log] true

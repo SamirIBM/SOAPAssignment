@@ -1,0 +1,246 @@
+2020-12-04 10:10:11,693 WARN  [SoapUI] Missing folder [C:\Users\SamirKhan\ASSIGNMENT\ext] for external libraries
+2020-12-04 10:10:11,930 INFO  [DefaultSoapUICore] initialized soapui-settings from [C:\Users\SamirKhan\soapui-settings.xml]
+2020-12-04 10:10:13,077 INFO  [WsdlProject] Loaded project from [file:/C:/Users/SamirKhan/ASSIGNMENT/SOAPProject-Batch2-soapui-project.xml]
+2020-12-04 10:10:13,465 INFO  [SoapUITestCaseRunner] Running SoapUI tests in project [SOAPProject_Batch2]
+2020-12-04 10:10:13,466 INFO  [SoapUITestCaseRunner] Running Project [SOAPProject_Batch2], runType = SEQUENTIAL
+2020-12-04 10:10:13,489 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [CatalogProdTypeList-TC007]
+2020-12-04 10:10:13,495 INFO  [SoapUITestCaseRunner] running step [Get Product Types]
+2020-12-04 10:10:17,938 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-12-04 10:10:17,938 INFO  [SoapUITestCaseRunner] Assertion [XPath Match] has status VALID
+2020-12-04 10:10:17,941 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
+2020-12-04 10:10:17,944 INFO  [SoapUITestCaseRunner] Assertion [Response SLA] has status VALID
+2020-12-04 10:10:17,944 INFO  [SoapUITestCaseRunner] Assertion [Invalid HTTP Status Codes] has status VALID
+2020-12-04 10:10:17,945 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+2020-12-04 10:10:17,945 INFO  [SoapUITestCaseRunner] Assertion [Valid HTTP Status Codes] has status VALID
+2020-12-04 10:10:17,948 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [CatalogProdTypeList-TC007], time taken: 4435ms, status: FINISHED
+2020-12-04 10:10:17,949 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [CatalogProductRepository-TC008]
+2020-12-04 10:10:17,950 INFO  [SoapUITestCaseRunner] running step [CreateNewProduct]
+2020-12-04 10:10:19,284 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-12-04 10:10:19,284 INFO  [SoapUITestCaseRunner] Assertion [XPath Match-sku] has status VALID
+2020-12-04 10:10:19,284 INFO  [SoapUITestCaseRunner] Assertion [XPath Match-name] has status VALID
+2020-12-04 10:10:19,288 INFO  [SoapUITestCaseRunner] Assertion [XPath Match- Price] has status VALID
+2020-12-04 10:10:19,288 INFO  [SoapUITestCaseRunner] Assertion [XPath Match-AttributeSetId] has status VALID
+2020-12-04 10:10:19,289 INFO  [SoapUITestCaseRunner] Assertion [XPath Match- TypeId] has status VALID
+2020-12-04 10:10:19,289 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+2020-12-04 10:10:19,290 INFO  [SoapUITestCaseRunner] Assertion [Invalid HTTP Status Codes] has status VALID
+2020-12-04 10:10:19,292 INFO  [SoapUITestCaseRunner] Assertion [Response SLA] has status VALID
+2020-12-04 10:10:19,295 INFO  [SoapUITestCaseRunner] Assertion [Valid HTTP Status Codes] has status VALID
+2020-12-04 10:10:19,295 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [CatalogProductRepository-TC008], time taken: 1333ms, status: FINISHED
+2020-12-04 10:10:19,296 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [CatalogProductRepository-TC009]
+2020-12-04 10:10:19,296 INFO  [SoapUITestCaseRunner] running step [GetList]
+2020-12-04 10:10:20,082 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-12-04 10:10:20,082 INFO  [SoapUITestCaseRunner] Assertion [XPathMatch-item] has status VALID
+2020-12-04 10:10:20,082 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+2020-12-04 10:10:20,083 INFO  [SoapUITestCaseRunner] Assertion [Response SLA] has status VALID
+2020-12-04 10:10:20,083 INFO  [SoapUITestCaseRunner] Assertion [Valid HTTP Status Codes] has status VALID
+2020-12-04 10:10:20,084 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [CatalogProductRepository-TC009], time taken: 785ms, status: FINISHED
+2020-12-04 10:10:20,085 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [CatalogProductRepository-TC010]
+2020-12-04 10:10:20,085 INFO  [SoapUITestCaseRunner] running step [GetProductBySKU]
+2020-12-04 10:10:20,959 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-12-04 10:10:20,959 INFO  [SoapUITestCaseRunner] Assertion [XPath Match- SKU] has status VALID
+2020-12-04 10:10:20,959 INFO  [SoapUITestCaseRunner] Assertion [Response SLA] has status VALID
+2020-12-04 10:10:20,960 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+2020-12-04 10:10:20,960 INFO  [SoapUITestCaseRunner] Assertion [Valid HTTP Status Codes] has status VALID
+2020-12-04 10:10:20,961 INFO  [SoapUITestCaseRunner] Assertion [Invalid HTTP Status Codes] has status VALID
+2020-12-04 10:10:20,961 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [CatalogProductRepository-TC010], time taken: 873ms, status: FINISHED
+2020-12-04 10:10:20,962 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [CatalogProductRepository-TC011]
+2020-12-04 10:10:20,962 INFO  [SoapUITestCaseRunner] running step [DeleteProductBySKU]
+2020-12-04 10:10:22,617 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-12-04 10:10:22,617 INFO  [SoapUITestCaseRunner] Assertion [XPath Match] has status VALID
+2020-12-04 10:10:22,617 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+2020-12-04 10:10:22,618 INFO  [SoapUITestCaseRunner] Assertion [Invalid HTTP Status Codes] has status VALID
+2020-12-04 10:10:22,618 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [CatalogProductRepository-TC011], time taken: 1654ms, status: FINISHED
+2020-12-04 10:10:22,623 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [CatalogProdTypeList-TC007]
+2020-12-04 10:10:22,623 INFO  [SoapUITestCaseRunner] running step [Get Product Types]
+2020-12-04 10:10:23,294 INFO  [log] [743]
+2020-12-04 10:10:23,295 INFO  [log] [application/soap+xml; charset=utf-8]
+2020-12-04 10:10:23,301 INFO  [log] simple
+2020-12-04 10:10:23,302 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-12-04 10:10:23,302 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
+2020-12-04 10:10:23,306 INFO  [SoapUITestCaseRunner] running step [Groovy Script]
+2020-12-04 10:10:23,333 INFO  [log] Testcase name is CatalogProdTypeList-TC007
+2020-12-04 10:10:23,339 INFO  [log] TestSuite name is CatalogProduct-Automation
+2020-12-04 10:10:23,351 INFO  [log] Request is <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:def="http://soap.upskills.in/soap/default?services=catalogProductTypeListV1">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <def:catalogProductTypeListV1GetProductTypesRequest/>\r
+   </soap:Body>\r
+</soap:Envelope>
+2020-12-04 10:10:23,997 INFO  [log] [743]
+2020-12-04 10:10:23,997 INFO  [log] [application/soap+xml; charset=utf-8]
+2020-12-04 10:10:23,999 INFO  [log] simple
+2020-12-04 10:10:24,000 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [CatalogProdTypeList-TC007], time taken: 1370ms, status: FINISHED
+2020-12-04 10:10:24,001 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [CatalogProductRepository-TC008]
+2020-12-04 10:10:24,002 INFO  [SoapUITestCaseRunner] running step [Groovy Script]
+2020-12-04 10:10:24,024 INFO  [log] Testcase name is CatalogProductRepository-TC008
+2020-12-04 10:10:24,025 INFO  [log] TestSuite name is CatalogProduct-Automation
+2020-12-04 10:10:24,026 INFO  [log] Request is <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:def="http://soap.upskills.in/soap/default?services=catalogProductRepositoryV1">
+   <soap:Header/>
+   <soap:Body>
+      <def:catalogProductRepositoryV1SaveRequest>
+         <product>
+            
+            <!--sku should be unique for each request-->
+			<sku>SKU00001</sku>
+			<name>MacBook Air</name>
+		<!--default value is 4-->
+			<attributeSetId>4</attributeSetId>
+			<price>100</price>
+		<!--for typeid refer catalogProductTypeListV1 WSDL service (TC_007)-->
+			<typeId>simple</typeId>
+         </product>
+      </def:catalogProductRepositoryV1SaveRequest>
+   </soap:Body>
+</soap:Envelope>
+2020-12-04 10:10:24,038 INFO  [log] SKU is SKU00001
+2020-12-04 10:10:24,038 INFO  [log] NAME is MacBook Air
+2020-12-04 10:10:24,038 INFO  [log] TYPE ID is simple
+2020-12-04 10:10:24,039 INFO  [log] SET ID is 4
+2020-12-04 10:10:24,039 INFO  [log] PRICE is 100
+2020-12-04 10:10:24,046 INFO  [log] Updated Xml is <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:def="http://soap.upskills.in/soap/default?services=catalogProductRepositoryV1">
+   <soap:Header/>
+   <soap:Body>
+      <def:catalogProductRepositoryV1SaveRequest>
+         <product>
+            
+            <!--sku should be unique for each request-->
+			<sku>SKU00001</sku>
+			<name>MacBook Air</name>
+		<!--default value is 4-->
+			<attributeSetId>4</attributeSetId>
+			<price>100</price>
+		<!--for typeid refer catalogProductTypeListV1 WSDL service (TC_007)-->
+			<typeId>simple</typeId>
+         </product>
+      </def:catalogProductRepositoryV1SaveRequest>
+   </soap:Body>
+</soap:Envelope>
+2020-12-04 10:10:25,243 INFO  [log] [1356]
+2020-12-04 10:10:25,244 INFO  [log] [application/soap+xml; charset=utf-8]
+2020-12-04 10:10:25,246 INFO  [log] SKU00001
+2020-12-04 10:10:25,246 INFO  [SoapUITestCaseRunner] running step [CreateNewProduct]
+2020-12-04 10:10:26,588 INFO  [log] [1356]
+2020-12-04 10:10:26,588 INFO  [log] [application/soap+xml; charset=utf-8]
+2020-12-04 10:10:26,589 INFO  [log] SKU00001
+2020-12-04 10:10:26,590 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-12-04 10:10:26,590 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
+2020-12-04 10:10:26,591 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [CatalogProductRepository-TC008], time taken: 2586ms, status: FINISHED
+2020-12-04 10:10:26,591 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [CatalogProductRepository-TC009]
+2020-12-04 10:10:26,592 INFO  [SoapUITestCaseRunner] running step [Groovy Script]
+2020-12-04 10:10:26,607 INFO  [log] Testcase name is CatalogProductRepository-TC009
+2020-12-04 10:10:26,607 INFO  [log] TestSuite name is CatalogProduct-Automation
+2020-12-04 10:10:26,608 INFO  [log] Request is <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:def="http://soap.upskills.in/soap/default?services=catalogProductRepositoryV1">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <def:catalogProductRepositoryV1GetListRequest>\r
+         <searchCriteria>\r
+         </searchCriteria>\r
+      </def:catalogProductRepositoryV1GetListRequest>\r
+   </soap:Body>\r
+</soap:Envelope>
+2020-12-04 10:10:27,544 INFO  [log] [1464]
+2020-12-04 10:10:27,544 INFO  [log] [application/soap+xml; charset=utf-8]
+2020-12-04 10:10:27,546 INFO  [log] SKU00001
+2020-12-04 10:10:27,547 INFO  [log] 12341977
+2020-12-04 10:10:27,548 INFO  [log] MacBook Air
+2020-12-04 10:10:27,550 INFO  [log] 4
+2020-12-04 10:10:27,553 INFO  [log] 100
+2020-12-04 10:10:27,554 INFO  [SoapUITestCaseRunner] running step [GetList]
+2020-12-04 10:10:28,353 INFO  [log] [1464]
+2020-12-04 10:10:28,353 INFO  [log] [application/soap+xml; charset=utf-8]
+2020-12-04 10:10:28,355 INFO  [log] SKU00001
+2020-12-04 10:10:28,356 INFO  [log] 12341977
+2020-12-04 10:10:28,357 INFO  [log] MacBook Air
+2020-12-04 10:10:28,357 INFO  [log] 4
+2020-12-04 10:10:28,358 INFO  [log] 100
+2020-12-04 10:10:28,360 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-12-04 10:10:28,360 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
+2020-12-04 10:10:28,362 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [CatalogProductRepository-TC009], time taken: 1765ms, status: FINISHED
+2020-12-04 10:10:28,363 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [CatalogProductRepository-TC010]
+2020-12-04 10:10:28,363 INFO  [SoapUITestCaseRunner] running step [GetList_1]
+2020-12-04 10:10:30,412 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-12-04 10:10:30,412 INFO  [SoapUITestCaseRunner] running step [Groovy Script]
+2020-12-04 10:10:30,429 INFO  [log] Testcase name is CatalogProductRepository-TC010
+2020-12-04 10:10:30,429 INFO  [log] TestSuite name is CatalogProduct-Automation
+2020-12-04 10:10:30,430 INFO  [log] Request is <env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns1="http://soap.upskills.in/soap/default?services=catalogProductRepositoryV1">
+   <env:Body>
+      <ns1:catalogProductRepositoryV1GetListResponse>
+         <result>
+            <items>
+               <item>
+                  <id>12341977</id>
+                  <sku>SKU00001</sku>
+                  <name>MacBook Air</name>
+                  <attributeSetId>4</attributeSetId>
+                  <price>100</price>
+                  <status>1</status>
+                  <visibility>4</visibility>
+                  <typeId>simple</typeId>
+                  <createdAt>2020-12-04 04:40:24</createdAt>
+                  <updatedAt>2020-12-04 04:40:25</updatedAt>
+                  <extensionAttributes>
+                     <websiteIds>
+                        <item>1</item>
+                     </websiteIds>
+                  </extensionAttributes>
+                  <productLinks/>
+                  <options/>
+                  <mediaGalleryEntries/>
+                  <tierPrices/>
+                  <customAttributes>
+                     <item>
+                        <attributeCode>options_container</attributeCode>
+                        <value>container2</value>
+                     </item>
+                     <item>
+                        <attributeCode>msrp_display_actual_price_type</attributeCode>
+                        <value>0</value>
+                     </item>
+                     <item>
+                        <attributeCode>url_key</attributeCode>
+                        <value>macbook-air</value>
+                     </item>
+                     <item>
+                        <attributeCode>required_options</attributeCode>
+                        <value>0</value>
+                     </item>
+                     <item>
+                        <attributeCode>has_options</attributeCode>
+                        <value>0</value>
+                     </item>
+                     <item>
+                        <attributeCode>tax_class_id</attributeCode>
+                        <value>2</value>
+                     </item>
+                     <item>
+                        <attributeCode>category_ids</attributeCode>
+                        <value/>
+                     </item>
+                  </customAttributes>
+               </item>
+            </items>
+            <searchCriteria>
+               <filterGroups/>
+            </searchCriteria>
+            <totalCount>1</totalCount>
+         </result>
+      </ns1:catalogProductRepositoryV1GetListResponse>
+   </env:Body>
+</env:Envelope>
+2020-12-04 10:10:30,469 INFO  [log] SKU00001
+2020-12-04 10:10:30,470 INFO  [SoapUITestCaseRunner] running step [GetProductBySKU]
+2020-12-04 10:10:31,413 INFO  [log] [1354]
+2020-12-04 10:10:31,413 INFO  [log] [application/soap+xml; charset=utf-8]
+2020-12-04 10:10:31,414 INFO  [log] SKU00001
+2020-12-04 10:10:31,415 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-12-04 10:10:31,415 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
+2020-12-04 10:10:31,415 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [CatalogProductRepository-TC010], time taken: 3044ms, status: FINISHED
+2020-12-04 10:10:31,416 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [CatalogProductRepository-TC011]
+2020-12-04 10:10:31,416 INFO  [SoapUITestCaseRunner] running step [DeleteProductBySKU]
+2020-12-04 10:10:32,491 INFO  [log] [349]
+2020-12-04 10:10:32,491 INFO  [log] [application/soap+xml; charset=utf-8]
+2020-12-04 10:10:32,493 INFO  [log] true
+2020-12-04 10:10:32,495 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2020-12-04 10:10:32,495 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
+2020-12-04 10:10:32,495 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [CatalogProductRepository-TC011], time taken: 1078ms, status: FINISHED
+2020-12-04 10:10:32,496 INFO  [SoapUITestCaseRunner] Project [SOAPProject_Batch2] finished with status [FINISHED] in 19026ms
